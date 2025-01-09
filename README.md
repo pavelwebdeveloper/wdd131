@@ -1,1 +1,2 @@
-WDD 131 course work
+# WDD 131: Dynamic Web Fundamentals
+
