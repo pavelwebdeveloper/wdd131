@@ -1,0 +1,51 @@
+body{
+    text-align: center;
+    margin: 2em 16em 0.3em 16em;
+    padding: 3em;
+    border: 5em;
+    border-color: lightgrey;
+}
+
+header{
+    margin-bottom: 5em;
+    
+}
+
+.main_heading{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.5em;
+    letter-spacing: 0.1em;
+}
+
+.university_name{
+    letter-spacing: 0.2em;
+    font-size: 1.5em;
+    color: blue;
+    border-bottom-style: solid;
+    border-color: rgb(194, 210, 208);
+}
+
+article{
+    font-size: 1.4em;
+    text-align: justify;
+    line-height: 1.7em;
+    font-weight: bold;
+}
+
+p{
+   margin: 1.5em 0 0.5em 0; 
+}
+
+.cursive{
+    font-style: italic;
+}
+
+li{
+    padding: 0.8em 0 0.8em 0;
+}
+
+img{
+    max-width: 20em;
+    max-height: 20em;
+    margin: 4em;
+}
