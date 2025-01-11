@@ -1,44 +1,44 @@
 body{
     text-align: center;
     margin: 2em 3em 0.3em 3em;
-    
+    font-family: 'Times New Roman', Times, serif;
 }
 
 div{
-    margin: 3em;
-    padding: 5em 15em 5em 15em;
+    max-width: 600px;
+    margin: auto;
+    padding: 4em 10em 1em 10em;
     border: 0.2em solid lightgrey;
 }
 
 header{
-    margin-bottom: 5em;
-    
+    margin-bottom: 3em;
+    text-transform: capitalize;
 }
 
 .main_heading{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 3.5em;
+    font-size: 2.55em;
     letter-spacing: 0.1em;
 }
 
 .university_name{
     letter-spacing: 0.2em;
-    font-size: 1.5em;
-    color: blue;
+    font-size: 1.1em;
+    color: #006EB6;
     border-bottom-width: 0.08em;
     border-bottom-style: solid;
     border-color: rgb(194, 210, 208);
 }
 
 article{
-    font-size: 1.4em;
-    text-align: justify;
+    font-size: 20px;
     line-height: 1.7em;
     font-weight: bold;
 }
 
 p{
    margin: 1.5em 0 0.5em 0; 
+   text-align: left;
 }
 
 .cursive{
@@ -47,10 +47,10 @@ p{
 
 li{
     padding: 0.8em 0 0.8em 0;
+    text-align: left;
 }
 
 img{
-    max-width: 20em;
-    max-height: 20em;
-    margin: 4em;
+    max-width: 150px;
+    margin: 1em;
 }
