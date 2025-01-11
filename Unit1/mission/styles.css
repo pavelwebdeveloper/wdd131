@@ -1,9 +1,13 @@
 body{
     text-align: center;
-    margin: 2em 16em 0.3em 16em;
-    padding: 3em;
-    border: 5em;
-    border-color: lightgrey;
+    margin: 2em 3em 0.3em 3em;
+    
+}
+
+div{
+    margin: 3em;
+    padding: 5em 15em 5em 15em;
+    border: 0.2em solid lightgrey;
 }
 
 header{
@@ -21,6 +25,7 @@ header{
     letter-spacing: 0.2em;
     font-size: 1.5em;
     color: blue;
+    border-bottom-width: 0.08em;
     border-bottom-style: solid;
     border-color: rgb(194, 210, 208);
 }
