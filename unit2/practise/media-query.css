@@ -10,14 +10,14 @@ header, main, footer{
     max-width: 640px;
     margin: 1rem auto;
     border: 1px solid rgb(106, 90, 205, 0.5);
-    padding: 10px;
+    padding: 1rem;
     background-color: rgb(106, 90, 205);
 }
 
 main{
     display: grid;
-    grid-template-columns: auto;
-    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
 }
 
 section{
@@ -32,6 +32,6 @@ section{
     }
 
     main{
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
     }
 }
