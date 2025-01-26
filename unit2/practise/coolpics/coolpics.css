@@ -38,6 +38,10 @@ ul{
     margin: 0;
 }
 
+li{
+    margin: 0.3rem 0;
+}
+
 a:link {
     color: var(--text-light);
   }
