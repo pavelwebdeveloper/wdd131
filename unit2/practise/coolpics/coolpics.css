@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
 :root {
     --primary-color: #52489c;
-    --secondary-color: #59c3c3;
+    --secondary-color: #d9d9d9;
     --accent-color: #f45b69;
     --text-dark: #333;
     --text-light: #ebebeb;
@@ -19,23 +19,49 @@ header, footer, button, a{
     background-color: var(--primary-color);
     color: var(--text-light);
     text-align: center;
+    
 }
 
 nav{
-    padding-right: 2rem;
+    padding: 0.1rem 0 1rem 0;
 }
 
 button{
     border: none;
+    font-size: 1.3rem;
 }
 
 ul{
     list-style-type: none;
+    padding-right: 2rem;
+    margin: 0;
+}
+
+a:link {
+    color: var(--text-light);
+  }
+
+a:visited {
+  color: var(--accent-color);
+}
+
+h1{
+    font-size: 2.5rem;
 }
 
 h1, h3{
     font-family: var(--secondary-font);
     text-align: center;
+}
+
+h1, h3{
+    margin: 0;
+    padding: 1rem 0 0 0;
+}
+
+p{
+    margin: 0;
+    padding: 1rem 0 1rem 0;
 }
 
 main{
@@ -59,7 +85,9 @@ figure{
 
 img{
     max-width: 100%;
-    height: 250px;
-    width: 250px;
+    height: 15.63rem;
+    width: 15.63rem;
     object-fit: cover;
+    border: 0.5em solid var(--text-light);
+    box-shadow: 0.4em 0.4em 0.7em 0.01em black;
 }
