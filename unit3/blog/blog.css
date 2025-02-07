@@ -11,20 +11,82 @@
 
 body{
     font-family: var(--primary-font);
-    margin: 0 auto;
+    margin: 2em;
 }
 
 h1, h2{
     font-family: var(--secondary-font);
 }
 
+h1{
+    text-align: center;
+    font-size: 3em;
+    margin: 1em 0;
+}
+
+h2, a{
+    color: var(--secondary-color);
+}
+
 li{
     list-style-type: none;
 }
 
+nav{
+    border-top: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
 #main-nav{
     display: grid;
-    grid-template-columns: 70px 70px 70px;
+    grid-template-columns: 90px 90px 90px;
     justify-content: end;
-    justify-items: end;
+    margin-right: 2em;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.textLink{
+    font-size: 1em;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#bookList li.article{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 1em 0;
+}
+
+
+
+article{
+    margin: 0 1em;
+}
+
+.articleDetails{
+    margin: 1.5em 0;
+}
+
+.articleDetails li{
+    margin: 1em;
+}
+
+img{
+    margin-left: 2em;
+}
+
+p{
+    line-height: 1.5em;
+}
+
+aside{
+    text-align: left;
+    margin: 1.5em 0;
 }

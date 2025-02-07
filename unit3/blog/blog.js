@@ -31,11 +31,13 @@ let bookList = document.getElementById("bookList");
 
 for (article in articles){
     const liElement = document.createElement("li");
+    liElement.setAttribute("class", "article")
     liElement.style.listStyleType = "none";
     const articleDetails = document.createElement("summary");
     const articeElement = document.createElement("article");
 
     const ul = document.createElement("ul");
+    ul.setAttribute("class", "articleDetails")
     articleDetailsSection(ul);
     articleDetails.appendChild(ul);
     liElement.appendChild(articleDetails);
@@ -77,19 +79,27 @@ function articleDetailsSection(ul){
     }
 }
 
-function articleSection(detailsElement){
+function articleSection(articeElement){
     const h2 = document.createElement("h2");
     titleText = document.createTextNode(articles[article].title);
     h2.appendChild(titleText);
-    detailsElement.appendChild(h2);
+    articeElement.appendChild(h2);
 
     const imgElement = document.createElement("img");
     imgElement.setAttribute("src", articles[article].imgSrc);
     imgElement.setAttribute("alt", articles[article].imgAlt);
-    detailsElement.appendChild(imgElement);
+    articeElement.appendChild(imgElement);
 
     const p = document.createElement("p");
     titleText = document.createTextNode(articles[article].description);
     p.appendChild(titleText);
-    detailsElement.appendChild(p);
+    const a = document.createElement("a");
+    a.setAttribute("href", "");
+    a.setAttribute("class", "textLink");
+    linkText = document.createTextNode(" Read More...");
+    a.appendChild(linkText);
+    p.appendChild(a);
+    articeElement.appendChild(p);
+
+
 }
