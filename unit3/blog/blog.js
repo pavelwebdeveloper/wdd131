@@ -25,3 +25,71 @@ const articles = [
 		stars: '⭐⭐⭐⭐'
 	}
 ]
+
+
+let bookList = document.getElementById("bookList");
+
+for (article in articles){
+    const liElement = document.createElement("li");
+    liElement.style.listStyleType = "none";
+    const articleDetails = document.createElement("summary");
+    const articeElement = document.createElement("article");
+
+    const ul = document.createElement("ul");
+    articleDetailsSection(ul);
+    articleDetails.appendChild(ul);
+    liElement.appendChild(articleDetails);
+    articleSection(articeElement);
+    liElement.appendChild(articeElement);
+    bookList.appendChild(liElement);
+}
+
+
+
+function articleDetailsSection(ul){
+
+    //console.log(articles[article]);
+
+    for(i=0;i<=4;i++){
+    const li = document.createElement("li");
+    let text;
+    if(i==0){
+        const timeElement = document.createElement("time");
+        const timeInfo = document.createTextNode(articles[article].date);
+        timeElement.appendChild(timeInfo);
+        li.appendChild(timeElement);
+        ul.appendChild(li);
+    } else if(i==1){
+        text = document.createTextNode(articles[article].ages);
+        li.appendChild(text);
+        ul.appendChild(li);
+    } else if(i==2){
+        text = document.createTextNode(articles[article].genre);
+        li.appendChild(text);
+        ul.appendChild(li);
+    } else if(i==3){
+        text = document.createTextNode(articles[article].stars);
+        li.appendChild(text);
+        ul.appendChild(li);
+    }
+    
+    
+    }
+}
+
+function articleSection(detailsElement){
+    const h2 = document.createElement("h2");
+    titleText = document.createTextNode(articles[article].title);
+    h2.appendChild(titleText);
+    detailsElement.appendChild(h2);
+
+    const imgElement = document.createElement("img");
+    imgElement.setAttribute("src", articles[article].imgSrc);
+    imgElement.setAttribute("alt", articles[article].imgAlt);
+    detailsElement.appendChild(imgElement);
+
+    const p = document.createElement("p");
+    titleText = document.createTextNode(articles[article].description);
+    p.appendChild(titleText);
+    detailsElement.appendChild(p);
+}

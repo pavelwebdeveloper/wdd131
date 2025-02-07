@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+:root {
+    --primary-color: #EFC69B;
+    --secondary-color: #AF1B3F;
+    --accent-color: #473144;
+    /*--text-dark: #333;
+    --text-light: #ebebeb;*/
+    --primary-font: Helvetica, Arial, sans-serif;
+    --secondary-font: Lora, Impact, serif;
+    }
+
+body{
+    font-family: var(--primary-font);
+    margin: 0 auto;
+}
+
+h1, h2{
+    font-family: var(--secondary-font);
+}
+
+li{
+    list-style-type: none;
+}
+
+#main-nav{
+    display: grid;
+    grid-template-columns: 70px 70px 70px;
+    justify-content: end;
+    justify-items: end;
+}
