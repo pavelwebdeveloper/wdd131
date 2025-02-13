@@ -6,6 +6,7 @@ function changeTheme() {
     console.log(themeSelector);
 
     console.log(option);
+    
     if(option == "dark"){
         document.body.setAttribute("class", "dark");
         document.querySelector("img").setAttribute("src", "byui-logo_white.png");
@@ -16,3 +17,5 @@ function changeTheme() {
 }
 
 themeSelector.addEventListener("change", changeTheme);
+
+

@@ -1,6 +1,10 @@
 // events.js
 let tasks = [];
 
+console.log("Hi DOM!");
+
+console.log([1,2,3]);
+
 function renderTasks(tasks) {
   // get the list element from the DOM
   let list = document.getElementById("todoList");
