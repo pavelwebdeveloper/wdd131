@@ -23,13 +23,26 @@ const articles = [
 		ages: '12-16',
 		genre: 'Fantasy',
 		stars: '⭐⭐⭐⭐'
-	}
+	},
+    {
+        id: 3,
+        title: "Belgariad Book One: Pawn of Prophecy",
+        date: "Feb 12, 2022",
+        description:
+        "A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his 'Aunt Pol' and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.",
+        imgSrc:
+        "https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+        imgAlt: "Book cover for Pawn of Prophecy",
+        ages: "12-16",
+        genre: "Fantasy",
+        stars: "⭐⭐⭐⭐⭐"
+        }
 ]
 
 
 let bookList = document.getElementById("bookList");
 
-for (article in articles){
+const articleOutput = function(article){
     const liElement = document.createElement("li");
     liElement.setAttribute("class", "article")
     liElement.style.listStyleType = "none";
@@ -38,60 +51,60 @@ for (article in articles){
 
     const ul = document.createElement("ul");
     ul.setAttribute("class", "articleDetails")
-    articleDetailsSection(ul);
+    articleDetailsSection(ul, article);
     articleDetails.appendChild(ul);
     liElement.appendChild(articleDetails);
-    articleSection(articeElement);
+    articleSection(articeElement, article);
     liElement.appendChild(articeElement);
     bookList.appendChild(liElement);
 }
 
 
+articles.forEach(articleOutput);
 
-function articleDetailsSection(ul){
+function articleDetailsSection(ul, article){
 
-    //console.log(articles[article]);
+    console.log("Inside articleDetailsSection function");
+    console.log(article);
 
     for(i=0;i<=4;i++){
     const li = document.createElement("li");
     let text;
-    if(i==0){
-        const timeElement = document.createElement("time");
-        const timeInfo = document.createTextNode(articles[article].date);
-        timeElement.appendChild(timeInfo);
-        li.appendChild(timeElement);
-        ul.appendChild(li);
-    } else if(i==1){
-        text = document.createTextNode(articles[article].ages);
-        li.appendChild(text);
-        ul.appendChild(li);
-    } else if(i==2){
-        text = document.createTextNode(articles[article].genre);
-        li.appendChild(text);
-        ul.appendChild(li);
-    } else if(i==3){
-        text = document.createTextNode(articles[article].stars);
-        li.appendChild(text);
-        ul.appendChild(li);
-    }
-    
-    
+        if(i==0){
+            const timeElement = document.createElement("time");
+            const timeInfo = document.createTextNode(article.date);
+            timeElement.appendChild(timeInfo);
+            li.appendChild(timeElement);
+            ul.appendChild(li);
+        } else if(i==1){
+            text = document.createTextNode(article.ages);
+            li.appendChild(text);
+            ul.appendChild(li);
+        } else if(i==2){
+            text = document.createTextNode(article.genre);
+            li.appendChild(text);
+            ul.appendChild(li);
+        } else if(i==3){
+            text = document.createTextNode(article.stars);
+            li.appendChild(text);
+            ul.appendChild(li);
+        }   
     }
 }
 
-function articleSection(articeElement){
+function articleSection(articeElement, article){
     const h2 = document.createElement("h2");
-    titleText = document.createTextNode(articles[article].title);
+    titleText = document.createTextNode(article.title);
     h2.appendChild(titleText);
     articeElement.appendChild(h2);
 
     const imgElement = document.createElement("img");
-    imgElement.setAttribute("src", articles[article].imgSrc);
-    imgElement.setAttribute("alt", articles[article].imgAlt);
+    imgElement.setAttribute("src", article.imgSrc);
+    imgElement.setAttribute("alt", article.imgAlt);
     articeElement.appendChild(imgElement);
 
     const p = document.createElement("p");
-    titleText = document.createTextNode(articles[article].description);
+    titleText = document.createTextNode(article.description);
     p.appendChild(titleText);
     const a = document.createElement("a");
     a.setAttribute("href", "");
