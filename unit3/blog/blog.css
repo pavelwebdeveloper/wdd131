@@ -3,6 +3,7 @@
     --primary-color: #EFC69B;
     --secondary-color: #AF1B3F;
     --accent-color: #473144;
+    --border-color: rgb(210, 210, 210);
     /*--text-dark: #333;
     --text-light: #ebebeb;*/
     --primary-font: Helvetica, Arial, sans-serif;
@@ -42,8 +43,8 @@ li{
 }
 
 nav{
-    border-top: 2px solid var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
+    border-top: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
 }
 
 #main-nav{
@@ -69,7 +70,7 @@ main{
 }
 
 summary{
-    border-right: 2px solid var(--primary-color);
+    border-right: 2px solid var(--border-color);
     text-align: right;
 }
 
@@ -111,6 +112,6 @@ p{
 aside{
     text-align: left;
     margin: 1.5em 0;
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--border-color);
 }
 
