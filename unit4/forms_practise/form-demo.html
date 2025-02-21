@@ -1,0 +1,47 @@
+<!-- form-demo.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="form-demo.css" />
+    <script src="form-demo.js" defer></script>
+  </head>
+  <body>
+    <header><h1>Checkout</h1></header>
+    <main>
+      <section class="errors"></section>
+      <form id="checkoutForm" action="completed.html">
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="address">Address:</label><br>
+        <textarea name="address" id="address" required></textarea><br>
+
+        <label for="paymentMethod">Payment Method:</label><br>
+        <select name="paymentMethod" id="paymentMethod" required>
+            <option value="">Select Payment Method</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="Pay Pal">Pay Pal</option>
+        </select><br>
+
+        <!-- Container for credit card details -->
+        <p id="creditCardNumberContainer" class="hide">
+        <label for="creditCardNumber">Credit Card Number:</label><br>
+        <input type="number" id="creditCardNumber" name="creditCardNumber" placeholder="Enter 16 digits" pattern="[0-9]{16}" required><br>
+        </p>
+
+        <!-- Container for PayPal details -->
+        <p id="paypalUsernameContainer" class="hide">
+        <label for="payPalUsername">PayPal Username:</label><br>
+        <input type="text" id="payPalUsername" name="payPalUsername" placeholder="Enter PayPal username" required><br>
+        </p>
+
+        <button type="submit">Place Order</button>
+      </form>
+    </main>
+  </body>
+</html>
