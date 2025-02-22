@@ -21,11 +21,11 @@
                 <label for="cardNumber" class="cardNumberInput">CARD NUMBER</label>
                 <input type="number" class="cardNumberInput" id="cardNumber" name="cardNumber" pattern="[0-9]{16}" placeholder="1234 5678 9101 1020" required><br>
                 <section id="cardHolderAndExpiration">
-                <section class="subsection1">
+                <section id="cardHolderSubsection">
                 <label for="cardHolder">CARD HOLDER</label>
                 <input type="text" id="cardHolder" name="cardHolder" placeholder="John Doe" required>
                 </section>
-                <section class="subsection2">
+                <section id="expirationSubsection">
                 <label for="expiration">EXPIRATION</label>
                 <input type="number" id="expirationMonth" name="expirationMonth" min="1" max="12" maxlength="2" placeholder="MM" required>
                 <input type="number" id="expirationYear" name="expirationYear" min="25" max="29" maxlength="2" placeholder="YY" required>

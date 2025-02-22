@@ -54,17 +54,17 @@ input{
     margin: 1em 0;
 }
 
-.subsection2{
+#expirationSubsection{
     display: grid;
     grid-template-rows: auto auto auto;
     justify-content: right;
 }
 
-.subsection2 label{
+#expirationSubsection label{
     grid-column: 1 / span 2;
 }
 
-.subsection2 input{
+#expirationSubsection input{
     width: 84%;
 }
 
