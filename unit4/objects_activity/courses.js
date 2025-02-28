@@ -12,7 +12,6 @@ const aCourse = {
    }
   };
 
-
   let setCourseNameAndNumber = function(aCourse) {
     document.getElementById("courseName").innerText = aCourse.name;
     document.getElementById("courseCode").innerText = aCourse.code;
@@ -54,15 +53,9 @@ function enrollOrDropStudent(option, sectionNum){
         aCourse.sections.forEach(renderSections);
     }
 }
-
-
-
   const tbodyElement = document.getElementById("sections");
 
   aCourse.sections.forEach(renderSections);
-
-  console.log("here is the input text");
-console.log(document.getElementById("sectionNumber").innerText);
 
   document.getElementById("enrollStudent").addEventListener("click", getInputandPerformAction);
   document.getElementById("dropStudent").addEventListener("click", getInputandPerformAction);
