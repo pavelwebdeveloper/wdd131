@@ -4,15 +4,15 @@ form{
     display: grid;
     grid-template-areas: "overlap";
     margin: 5em auto;
-    
+    font-size: 1em;
 }
 
 form label{
-    font-size: 1em;
+    font-size: 1.07em;
 }
 
 form input{
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 fieldset{
@@ -25,7 +25,7 @@ fieldset{
 }
 
 #creditCardFront{
-    width: 17em;
+    width: 18.5em;
     height: 12em;
     padding: 1em;
 }
@@ -73,10 +73,10 @@ input{
 }
 
 #creditCardBack{
-    width: 18em;
-    height: 13em;
+    width: 20.5em;
+    height: 13.5em;
     margin-top: 3.5em;
-    margin-left: 7em;
+    margin-left: 6.5em;
     z-index: 0;
     display: grid;
     grid-template-rows: 10fr 1fr 1fr;
@@ -93,11 +93,11 @@ input{
 
 #creditCardBack label,input{
     margin-right: 1em;
-    width: 24%;
+    width: 23%;
 }
 
 #cardNumber{
-    width: 98%;
+    width: 97%;
 }
 
 #cardHolder{
