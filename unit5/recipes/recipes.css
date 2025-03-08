@@ -22,6 +22,9 @@ img{
 #logo-and-brand-name{
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 2em 0;
 }
 
 header{
@@ -35,13 +38,11 @@ header, section, .header{
     margin-bottom: 1em;
 }
 
-.header{
-    display: flex;
-    justify-content: center;   
-}
+
 
 #logo-image{
     max-width: 30%;
+    
 }
 
 form{
@@ -52,6 +53,20 @@ form{
 input{
     flex: 1 0 90%;
     font-size: var(--main-font-size);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+button{
+    background-color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 3em;
+    color: var(--secondary-color);
+}
+
+input, button{
+    border-color: var(--text-light);
 }
 
 #header-underline{
@@ -68,7 +83,8 @@ h1, h3{
 }
 
 h1{
-    font-size: 3em;
+    font-size: 3.5em;
+    margin: 0;
 }
 
 article{
@@ -87,6 +103,10 @@ h3{
     color: var(--primary-color);
 }
 
+h3, p{
+    margin: 1em 0 0 0;
+}
+
 footer a{
     font-size: 0.6em;
 }
@@ -94,14 +114,19 @@ footer a{
 footer{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 90%;
 }
 
 .social{
+    display: flex;
+    flex-direction: row;
     text-align: center;
 }
 
 .social img{
-    max-width: 4em;
+    width: 5em;
+    padding: 0.5em;
 }
 
 button{
@@ -114,25 +139,88 @@ main{
 }
 
 section{
+    display: flex;
+    flex-direction: column;
     max-width: 90%;
-    border: 1px var(--text-dark) solid;
-    
+    border: 1px var(--text-dark) solid; 
+    border-radius: 5px;  
 }
 
 p{
     display: none;
 }
 
+.rating{
+    background-color: white;
+}
+
+@media only screen and (min-width: 450px) {
+    #logo-image{
+        max-width: 25%;   
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    #logo-image{
+        max-width: 20%;   
+    }
+}
+
 @media only screen and (min-width: 600px) {
+    #logo-image{
+        max-width: 15%;   
+    }
+
+    figure{
+        flex: 0 1 80%;
+    }
+
+    summary{
+        max-width: 50%; 
+    }
+
+    p{
+        display: block;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    #logo-image{
+        max-width: 12%;   
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    #logo-and-brand-name{
+        padding: 2em 2em;
+    }
+
     section{
         display: flex;
         flex-direction: row;
     }
 
-    figure{
-        flex: 0 2 50%;
+    article{
+        padding: 1.6em 0;
     }
 }
+
+@media only screen and (min-width: 900px) {
+    #logo-and-brand-name{
+        padding: 2em 8em;
+    }
+
+    #logo-image{
+        max-width: 16%;   
+    }
+}
+
 
 @media only screen and (min-width: 960px) {
     section{
@@ -141,6 +229,32 @@ p{
     }
 
     figure{
+        flex: 0 4 80%;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    #logo-and-brand-name{
+        margin: 2em 9.8em;
+    }
+    
+    #logo-image{
+        max-width: 25%;   
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+    figure{
         flex: 0 4 25%;
+    }
+
+    #logo-image{
+        max-width: 20%;   
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    #logo-image{
+        max-width: 12%;   
     }
 }
