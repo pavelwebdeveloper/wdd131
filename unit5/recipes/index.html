@@ -4,19 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">-->
     <link rel="stylesheet" href="recipes.css">
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <script src="main.js"></script>
 </head>
 <body>
     <header>
-        <img src="images/recipe-book.png" alt="logo image">
-        <h1></h1>
+        <!--<div class="header" id="logo-and-brand-name">-->
+            <div class="header" id="logo-and-brand-name">
+            <img id="logo-image" src="images/recipe-book.png" alt="logo image">
+            <h1>RecipeBook</h1>
+        </div>
+        <!--<form class="header" action="">-->
         <form action="">
             <label for="search"></label>
-            <input type="text" id="search" name="search">
+            <input type="text" id="search" name="search" placeholder="Find a recipe">
+            <button type="submit"><i class="fa fa-search"></i></button>
         </form>
     </header>
-    <main></main>
+    <div id="header-underline"></div>
+    <main>
+        <section>
+            <figure><img src="./images/sweet-potato-waffle-md.jpg" alt=""></figure>
+            <article><summary>Waffles</summary>
+            <h3>Sweet Potato Waffles</h3>
+            <mark><span
+                class="rating"
+                role="img"
+                aria-label="Rating: 4 out of 5 stars"
+            >
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">☆</span>
+            </span></mark>
+            <p>Savory waffles made with Sweet potato with a hint of Ginger</p>
+            </article>
+        </section>
+    </main>
     <footer>
         <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
         <div class="social">
