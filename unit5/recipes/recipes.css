@@ -109,13 +109,14 @@ h3, p{
 
 footer a{
     font-size: 0.6em;
+    padding-left: 0.6em;
 }
 
 footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 91%;
 }
 
 .social{
@@ -235,7 +236,7 @@ p{
 
 @media only screen and (min-width: 1050px) {
     #logo-and-brand-name{
-        margin: 2em 9.8em;
+        margin: 2em 7.6em;
     }
     
     #logo-image{
@@ -256,5 +257,11 @@ p{
 @media only screen and (min-width: 1250px) {
     #logo-image{
         max-width: 12%;   
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    footer{
+        width: 83%;
     }
 }
