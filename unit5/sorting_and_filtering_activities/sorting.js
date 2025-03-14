@@ -76,15 +76,30 @@ const hikes = [
    console.log(simpleSort);
 
    console.log(searchList(simpleList, "b"));
+   console.log(searchList(simpleList, "an"));
 
    function searchList(simpleList, queryString){
-    simpleList.filter(searchCallback(queryString));
+    
+      function searchCallback(string){
+        
+        return string.toLowerCase().includes(queryString);
+      }
+
+    return simpleList.filter(searchCallback);
    }
 
-   function searchCallback(queryString){
-    if(string.includes(queryString)){
-        return true;
-    } else {
-        return false;
+   function searchObjectList(objectList, queryString){
+    
+    function searchCallback(object){
+      
+      return (object.name.toLowerCase().includes(queryString) || object.description.toLowerCase().includes(queryString) || object.tags.find((tag)=>{return tag.toLowerCase().includes(queryString)}))
     }
-}
+
+  return objectList.filter(searchCallback);
+ }
+
+
+ console.log(searchObjectList(hikes, "yellowstone"));
+   console.log(searchObjectList(hikes, "yellowstone").sort((a,b) => a.distance > b.distance));
+
+   
