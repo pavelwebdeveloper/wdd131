@@ -99,7 +99,7 @@ const hikes = [
  }
 
 
- console.log(searchObjectList(hikes, "moderate"));
-   console.log(searchObjectList(hikes, "moderate").sort((a,b) => a.distance > b.distance));
+ console.log(searchObjectList(hikes, "an"));
+   console.log(searchObjectList(hikes, "an").sort((a,b) => a.distance > b.distance));
 
    
