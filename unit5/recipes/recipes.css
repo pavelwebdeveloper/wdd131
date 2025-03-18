@@ -96,7 +96,7 @@ summary{
     border: 1px var(--text-dark) solid;
     max-width: 30%;
     text-align: center;
-    
+    margin: 0.5em;
 }
 
 h2{
@@ -136,7 +136,8 @@ button{
 
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 section{
@@ -173,11 +174,11 @@ p{
     }
 
     figure{
-        flex: 0 1 80%;
+        flex: 0 1 100%;
     }
 
     summary{
-        max-width: 50%; 
+        max-width: 30%; 
     }
 }
 
@@ -229,8 +230,10 @@ p{
     }
 
     figure{
-        flex: 0 4 80%;
+        flex: 0 1 80%;
     }
+
+    
 }
 
 @media only screen and (min-width: 1050px) {
@@ -241,6 +244,8 @@ p{
     #logo-image{
         max-width: 25%;   
     }
+
+    
 }
 
 @media only screen and (min-width: 1150px) {
@@ -250,6 +255,10 @@ p{
 
     #logo-image{
         max-width: 20%;   
+    }
+
+    figure{
+        flex: 0 1 80%;
     }
 }
 
