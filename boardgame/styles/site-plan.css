@@ -2,17 +2,19 @@
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
 @import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Luckiest+Guy&family=Patrick+Hand&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #396e94;
-  --secondary-color: #e7c24f;
-  --accent1-color: #a42212;
-  --accent2-color: white;
+  --primary-color: #3A5694;
+  --secondary-color: #F8FF24;
+  --accent1-color: #FFFFFF;
+  --accent2-color: #381D2A;
+  --accent3-color: #01EC1C;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "IM Fell French Canon SC";
-  --paragraph-font: Lato, Helvetica, sans-serif;
+  --heading-font: "Archivo Black", sans-serif;
+  --paragraph-font: "Roboto", Helvetica, sans-serif;
+  --logo-font: "Luckiest Guy", "Patrick Hand", cursive;
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: var(
@@ -41,6 +43,15 @@ body {
 img {
   display: block;
   margin: 0 auto;
+}
+mark{
+  font-family: var(--logo-font);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4em;
+  background-color: white;
+  color: var(--accent1-color);
+  text-shadow: 1px 1px 5px var(--accent2-color), 0 0 35px var(--primary-color), 0 0 10px var(--accent2-color);
 }
 h1,
 h2,
@@ -91,6 +102,7 @@ p {
 
 .primary {
   background-color: var(--primary-color);
+  color: var(--accent1-color);
 }
 .secondary {
   background-color: var(--secondary-color);
@@ -100,6 +112,11 @@ p {
 }
 .accent2 {
   background-color: var(--accent2-color);
+  color: white;
+}
+
+.accent3 {
+  background-color: var(--accent3-color);
 }
 
 p.colored {
