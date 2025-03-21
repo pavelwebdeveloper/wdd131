@@ -2,18 +2,18 @@
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
 @import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Luckiest+Guy&family=Patrick+Hand&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Patrick+Hand&display=swap');
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #3A5694;
-  --secondary-color: #F8FF24;
-  --accent1-color: #FFFFFF;
+  --secondary-color: #FFFFFF;
+  --accent1-color: #F8FF24;
   --accent2-color: #381D2A;
   --accent3-color: #01EC1C;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "Archivo Black", sans-serif;
-  --paragraph-font: "Roboto", Helvetica, sans-serif;
+  --heading-font: 'Times New Roman', Georgia, serif;
+  --paragraph-font: Arial, Verdana, sans-serif;
   --logo-font: "Luckiest Guy", "Patrick Hand", cursive;
 
   /* these colors below should be chosen from among your palette colors above */
@@ -44,6 +44,12 @@ img {
   display: block;
   margin: 0 auto;
 }
+
+.image{
+  max-width: 50%;
+  padding: 1em;
+}
+
 mark{
   font-family: var(--logo-font);
   font-weight: 400;
@@ -102,7 +108,7 @@ p {
 
 .primary {
   background-color: var(--primary-color);
-  color: var(--accent1-color);
+  color: var(--secondary-color);
 }
 .secondary {
   background-color: var(--secondary-color);
