@@ -11,16 +11,22 @@ function renderGames(games) {
     
 
 	// Set the HTML strings as the innerHTML of our output element.
-    mainElement.innerHTML = gameHtml;
+    //mainElement.innerHTML = gameHtml;
+    (games.length > 0) ? mainElement.innerHTML = gameHtml : mainElement.innerHTML = renderZeroSearchResults();
+}
+
+function renderZeroSearchResults(){
+    return "<p id='zeroSearchResultsMessage'>Sorry, currently we do not have information about this game. Please, try to search for a different game.</p>";
 }
 
 function gameTemplate(game){
     return `<section>
             <figure><img src="${game.image}" alt="${game.name}"></figure>
             <article>
-            <summary>${tagsTemplate(game.tags)}</summary>
             <h2>${game.name}</h2>
             <p>${game.description}</p>
+            <p><b>Number of players: </b>${game.numberOfPlayers}</p>
+            <summary>${tagsTemplate(game.tags)}</summary>
             <a href="${game.wikipediaLink}" target="_blank">More about ${game.name} on Wikipedia</a>
             </article>
         </section>`;
