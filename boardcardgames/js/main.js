@@ -2,16 +2,13 @@ import games from "./games.mjs";
 
 
 function renderGames(games) {
-	// get the element we will output the recipes into
+	// get the element we will output the games into
     const mainElement = document.getElementsByTagName("main")[0];
-	// use the recipeTemplate function to transform our recipe objects into recipe HTML strings
+	// use the gameTemplate function to transform our game objects into game HTML strings
     let gameHtml = '';
-    console.log(games);
     games.forEach(game => gameHtml += gameTemplate(game));
     
-
-	// Set the HTML strings as the innerHTML of our output element.
-    //mainElement.innerHTML = gameHtml;
+	// Set the HTML strings as the innerHTML of the main element based on the condition
     (games.length > 0) ? mainElement.innerHTML = gameHtml : mainElement.innerHTML = renderZeroSearchResults();
 }
 
@@ -21,7 +18,7 @@ function renderZeroSearchResults(){
 
 function gameTemplate(game){
     return `<section>
-            <figure><img src="${game.image}" alt="${game.name}"></figure>
+            <figure><img src="${game.image}" alt="${game.imageAlt}"></figure>
             <article>
             <h2>${game.name}</h2>
             <p>${game.description}</p>
@@ -44,10 +41,6 @@ function tagsTemplate(tags) {
 function searchHandler(event){
     event.preventDefault();
     let searchString = document.getElementById("search").value.toLowerCase();
-    console.log("Here is the search string !!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-    console.log(searchString);
-    console.log("Here is the filtered list !!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-    console.log(filterGames(searchString));
     renderGames(filterGames(searchString));
 }
 

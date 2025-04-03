@@ -13,21 +13,8 @@
   --paragraph-font: Arial, Verdana, sans-serif;
   --logo-font: "Luckiest Guy", "Patrick Hand", cursive;
 
-  /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: var(
-    --primary-color
-  ); /* headlines on a white background */
-  --headline-color-on-color: white; /* headlines on a colored background */
-  --paragraph-color-on-white: var(
-    --primary-color
-  ); /* paragraph text on a white background */
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */
-  --paragraph-background-color: var(--primary-color);
-  --nav-link-color: var(--primary-color);
-  --nav-background-color: var(--secondary-color);
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: var(--primary-color);
-}
+  /*font sizes*/
+  --input-font-size: 1.1em;
 
 body {
     max-width: 1200px;
@@ -70,6 +57,17 @@ ul{
     font-size: 2em;
   }
 
+@media only screen and (max-width: 380px) {
+  ul{
+    margin-right: 0;
+    font-size: 1.5em;
+  }
+
+  #logo{
+    font-size: 1.5em;
+  }
+}
+
 ul a{
     text-decoration: none;
   }
@@ -90,9 +88,10 @@ input, button{
 
 input{
     flex: 1 0 90%;
-    font-size: var(--main-font-size);
+    font-size: var(--input-font-size);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    padding: 0.2em;
   }
 
 button{
@@ -122,8 +121,9 @@ section{
     }
 
     #mainImage{
+      display: block;
         max-width: 70%;
-        margin: 2em;
+        margin: 2em auto;
     }
 }
 
@@ -141,7 +141,7 @@ mark{
     background-color: var(--primary-color);
     color: var(--secondary-color);
     padding: 0.5em;
-    max-width: 30%;
+    max-width: 40%;
     text-align: center;
     margin: 0.5em 0.5em 1em 0;
 }
