@@ -1,7 +1,7 @@
 const games = [
 	{
 		tags: ['Board Game', 'Abstract Strategy', 'Mind Sport'],
-		description: 'Chess is a strategic board game played on an 8×8 grid between two players, each controlling 16 pieces: a king, queen, two rooks, two bishops, two knights, and eight pawns. The goal is to checkmate the opponent’s king, meaning it is under attack with no escape. Players take turns moving pieces according to their unique movement rules—rooks move straight, bishops diagonally, knights in an L-shape, the queen in any direction, and pawns forward (capturing diagonally). Special moves like castling, en passant, and pawn promotion add depth to the game. A match can end in checkmate, resignation, or a draw due to a stalemate or insufficient material. Strategy, tactics, and foresight are key to mastering chess',
+		description: 'Chess is a strategic board game played on an 8×8 grid between two players, each controlling 16 pieces: a king, queen, two rooks, two bishops, two knights, and eight pawns. The goal is to checkmate the opponent’s king, meaning it is under attack with no escape. Players take turns moving pieces according to their unique movement rules—rooks move straight, bishops diagonally, knights in an L-shape, the queen in any direction, and pawns forward (capturing diagonally). Special moves like castling, en passant, and pawn promotion add depth to the game. A match can end in checkmate, resignation, or a draw due to a stalemate or insufficient material. Strategy, tactics, and foresight are key to mastering chess.',
 		image: './images/shannon-potter-scFS7bxEBCs-unsplash.jpg',
 		imageAlt: 'A chess board with chess on it',
 		name: 'Chess',
@@ -10,7 +10,7 @@ const games = [
 	},
     {
 		tags: ['Board Game', 'Abstract Strategy', 'Mind Sport'],
-		description: 'Checkers is a two-player strategy game played on an 8×8 board, where each player starts with 12 pieces placed on the dark squares of their side. Players take turns moving their pieces diagonally forward, capturing an opponent’s piece by jumping over it. If a piece reaches the opponent’s back row, it is "kinged" and gains the ability to move both forward and backward. The game continues until one player captures all of the opponent’s pieces or blocks them from making a legal move, resulting in a win. If neither player can force a win, the game can end in a draw',
+		description: 'Checkers is a two-player strategy game played on an 8×8 board, where each player starts with 12 pieces placed on the dark squares of their side. Players take turns moving their pieces diagonally forward, capturing an opponent’s piece by jumping over it. If a piece reaches the opponent’s back row, it is "kinged" and gains the ability to move both forward and backward. The game continues until one player captures all of the opponent’s pieces or blocks them from making a legal move, resulting in a win. If neither player can force a win, the game can end in a draw.',
 		image: './images/tai-s-captures-2MhByPCKjHA-unsplash.jpg',
 		imageAlt: 'A chess board with checkers on it',
 		name: 'Checkers',
@@ -19,7 +19,7 @@ const games = [
 	},
     {
 		tags: ['Tile-based Game'],
-		description: 'Dominoes is a classic tile-based game played with rectangular tiles, each divided into two square ends displaying a number of pips (dots). Players take turns matching tiles with the same number of pips on an open end of the domino chain. The game can be played in various versions, such as Block, Draw, and Mexican Train, with the goal usually being to place all tiles first or have the fewest pips when the game is blocked. Scoring varies by version, often awarding points based on remaining opponent tiles or multiples of five. Strategic thinking and tile management are key to winning',
+		description: 'Dominoes is a classic tile-based game played with rectangular tiles, each divided into two square ends displaying a number of pips (dots). Players take turns matching tiles with the same number of pips on an open end of the domino chain. The game can be played in various versions, such as Block, Draw, and Mexican Train, with the goal usually being to place all tiles first or have the fewest pips when the game is blocked. Scoring varies by version, often awarding points based on remaining opponent tiles or multiples of five. Strategic thinking and tile management are key to winning.',
 		image: './images/tatiana-rodriguez-JXr51Nc5lBU-unsplash.jpg',
 		imageAlt: 'Dominoes tiles on a table',
 		name: 'Dominoes',
