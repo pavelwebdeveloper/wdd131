@@ -30,10 +30,10 @@ img{
 }
 
 #logo{
-    font-family: var(--logo-font);
+  font-family: var(--logo-font);
   font-weight: 400;
   font-style: normal;
-  font-size: 2em;
+  font-size: 1.6em;
   background-color: white;
   color: var(--accent1-color);
   text-decoration-line: none;
